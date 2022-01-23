@@ -1,4 +1,4 @@
-I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in legal text.
+I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in "bipolar" legal text.
 
 Here is my [resume](https://github.com/quantapix/quantapix/blob/main/resume.pdf), 
 personal ["history"](https://github.com/quantapix/quantapix/blob/main/history.pdf) and non-technical [references](https://github.com/quantapix/quantapix/blob/main/references.pdf).
