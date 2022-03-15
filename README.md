@@ -1,7 +1,7 @@
 I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in "bipolar" legal text. Here is my [resume](https://github.com/quantapix/quantapix/blob/main/resume.pdf), 
 personal ["history"](https://github.com/quantapix/quantapix/blob/main/history.pdf) and non-technical [references](https://github.com/quantapix/quantapix/blob/main/references.pdf).
 
-My public repositories (see below) are under intense development with a court-imposed deadline of 5/6/2022. In preparation for that hearing, I am starting a [blog](https://github.com/quantapix/quantapix/blob/main/blog) to highlight my current, non-proprietary open source development activities.
+My public repositories (see below) are under intense development with a court-imposed deadline of 5/6/2022. In preparation for that hearing, I am starting a [blog](https://github.com/quantapix/quantapix/blob/main/blog.md) to highlight my current, non-proprietary open source development activities.
 
 I have been threatened, arrested (most recently on 1/21/2022, see my [petition](https://github.com/quantapix/quantapix/blob/main/petition.pdf) to the Supreme Judicial Court and my [appeal](https://github.com/quantapix/quantapix/blob/main/appeal.pdf) to the Commission Against Discrimination) and ordered to apply for 10 jobs a week. With a total of ~150 job applications submitted by 5/6/2022, I clearly cannot claim "great matches" with any of them, specifically because of the particular circumstances of my relevant work since 2017.
 
