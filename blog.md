@@ -6,7 +6,7 @@ I have been particularly fascinated by the "transformers" idea. Since implemente
 
 I have no computing resources to attempt to effectively train any non-trivial transformer. Fortunately, [Hugging Face](https://huggingface.co) has collected and systematically catalogued a great wealth of already trained datasets.
 
-Open source implementations of the various transformer models are also provided in the Hugging Face git repositories. Reading the well documented source code aids in initial efforts to master the technology.
+Open source implementations of the various transformer models are also provided in the Hugging Face git repositories (unlike the API based approach like [this](https://openai.com/blog/customized-gpt-3/)). Reading the well documented source code aids in initial efforts to master the technology.
 
 Once familiarity is established, however, patterns of usage, and specifically the differences between approaches, become essential. While feverishly experimenting with different ideas, I personally found distracting to look at the same algorithms written inconsistently, with differing naming conventions, etc. Scrolling through long function definitions also broke my “flow.”
 
