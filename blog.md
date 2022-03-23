@@ -40,7 +40,7 @@ The sequencing patterns of deep learning operations on their parameters are simp
 
 Maintaining the visual simplicity of the code is a priority and a few significant arguments can be made positional. All the other, mostly optional values are passed as keyword arguments.
 
-The nesting of *forward* calls is static and therefore a given. Naming the pass-through keyword arguments in these calls becomes redundant and greatly increases the visual complexity of the *forward* method definitions. In the [attached](https://github.com/quantapix/qnarre.com/tree/main/qnarre) and thus re-written `forward` method, I present the high-level attention mechanism as implemented by the [GPT2](http://jalammar.github.io/illustrated-gpt2/) model. It showcases the greatly reduced number of “important” arguments that the method accepts.
+The nesting of *forward* calls is static and therefore a given. Naming the pass-through keyword arguments in these calls becomes redundant and greatly increases the visual complexity of the *forward* method definitions. In the [attached](https://github.com/quantapix/quantapix/blob/main/code.md) and thus re-written `forward` method, I present the high-level attention mechanism as implemented by the [GPT2](http://jalammar.github.io/illustrated-gpt2/) model. It showcases the greatly reduced number of “important” arguments that the method accepts.
 
 The HF codebase has introduced much desired flexibility in not just uniformly configuring the hyperparameters of a model, but also in specifying the returned results of the method calls. The set of controlling flags, that would need to be passed through the entire call-chain, are named as keyword arguments in all the original `forward` methods.
 
