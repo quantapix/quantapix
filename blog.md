@@ -38,7 +38,7 @@ This satisfies the objective of constructing deep learning modules with a “wha
 
 The sequencing patterns of deep learning operations on their parameters are simple. To establish uniformity across the implementations of various models, I have adopted the practice of naming the main input tensor with `x` and the corresponding output tensor with `y` in the `forward` methods.
 
-Maintaining the visual simplicity of the code is a priority and a few significant arguments can be made positional. All the other, mostly optional values are passed as keyword arguments.
+Maintaining the visual simplicity of the code is a priority and a few significant arguments can be made positional. All the other, mostly optional, values are passed as keyword arguments.
 
 The nesting of *forward* calls is static and therefore a given. Naming the pass-through keyword arguments in these calls becomes redundant and greatly increases the visual complexity of the *forward* method definitions. In the [attached](https://github.com/quantapix/quantapix/blob/main/code.md) and thus re-written `forward` method, I present the high-level attention mechanism as implemented by the [GPT2](http://jalammar.github.io/illustrated-gpt2/) model. It showcases the greatly reduced number of “important” arguments that the method accepts.
 
@@ -54,7 +54,17 @@ Applying these and other similar "unification" patterns to the existing HF codeb
 
 ## 3/30/2022
 
-TBD
+Deep learning models are presented with numerically encoded patterns or *input features* and they “learn” to recognize these patterns through iterative training processes. I find the case of *convolutional* neural networks (CNNs) particularly intuitive when thinking about the task of “recognizing patterns.”
+
+“Convolutional networks were inspired by biological processes in that the connectivity pattern between neurons resembles the organization of the animal visual cortex“ [here](https://en.wikipedia.org/wiki/Convolutional_neural_network). Using the same weights and biases (the above mentioned parameters of a model), the *kernel* repeatedly scans the pixels of an image, literally “looking” for particular changes or transitions in their values.
+
+The end result of such a “convolution” over a set of input features is a *feature map*. The obvious example is the CNN filter that extracts sharp transitions, or “lines,” from the values of input pixels. Feeding these lines back into a second CNN filter, we can then extract maps of lines (instead of just pixels). Stacking a number of CNN filters on top of each other, we could then implement a deep network of filters recognizing the ever popular “cat eyes” in any image.
+
+The most important characteristic of the mapping of features in a CNN is that the position of the input features are bounded and localized, or “physically” next to each other. Therefore, applying a CNN to a natural language processing task would allow recognizing “word transitions” in equal length lines of text. Changing the length of lines or reorganizing the words in the same text would, however, result in a different extracted “meaning.”
+
+These restrictions in CNNs can be lifted when the inputs are not “pixelated.” [RNNs](https://en.wikipedia.org/wiki/Recurrent_neural_network) allow for “infinite” sequences and the *attention* mechanism allows encoding not just the values of features but also the scoring of the position of the values relative to each other.
+
+The transformer models build on this generalization of “convolution” to recognize patterns in textual inputs. And as the semantics or meaning of text is conveyed through the patterns of words, transformers can effectively help with either extracting or generating such textual patterns.
 
 ## 4/6/2022
 
