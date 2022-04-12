@@ -3,7 +3,7 @@ personal ["history"](https://github.com/quantapix/quantapix/blob/main/history.pd
 
 My public repositories (see below) are under intense development with a court-imposed deadline of 5/6/2022. In preparation for that hearing, I am starting a [blog](https://github.com/quantapix/quantapix/blob/main/blog.md) to highlight my current, non-proprietary open source development activities.
 
-I have been threatened, arrested (most recently on 1/21/2022, see my [petition](https://github.com/quantapix/quantapix/blob/main/petition.pdf) to the Supreme Judicial Court and my [appeal](https://github.com/quantapix/quantapix/blob/main/appeal.pdf) to the Commission Against Discrimination) and ordered to apply for 10 jobs a week. With a total of ~150 job applications submitted by 5/6/2022, I clearly cannot claim "great matches" with any of them, specifically because of the particular circumstances of my relevant work since 2017.
+I have been threatened, arrested (most recently on 1/21/2022, see my [petition](https://github.com/quantapix/quantapix/blob/main/petition.pdf) and [appeal](https://github.com/quantapix/quantapix/blob/main/sjc_appeal.pdf) to the Supreme Judicial Court and my [appeal](https://github.com/quantapix/quantapix/blob/main/mcad_appeal.pdf) to the Commission Against Discrimination) and ordered to apply for 10 jobs a week. With a total of over 150 job applications submitted by 5/6/2022, I clearly cannot claim "great matches" with any of them, specifically because of the particular circumstances of my relevant work since 2017.
 
 A successful application for an ordered full-time position would also mean abandoning my ~$1M investment in my company Quantapix, along with all my personal savings and my entire retirement at age 60.
 

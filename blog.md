@@ -1,6 +1,6 @@
 # Activities Blog for the court hearing on 5/6/2022 (without any proprietary source code)
 
-For the last ~5 years I have been focusing on deep learning for NLP (natural language processing). The circumstantial reasons I chose this topic are eloquently described [here](http://karpathy.github.io/2022/03/14/lecun1989/).
+For the last ~5 years I have been focusing on deep learning for NLP (natural language processing). The circumstantial reasons I chose this topic are eloquently described [here](http://karpathy.github.io/2022/03/14/lecun1989/). On a personal level, I described my choice [here](https://github.com/quantapix/quantapix/blob/main/references.pdf).
 
 I have been particularly fascinated by the *transformers* idea. Since implemented deep learning could be summarized as “iterative addition and multiplication of grouped numbers," the attention mechanism of transformers cleverly emphasizes the desired effects of certain inputs over others throughout this process (more [here](https://www.quantamagazine.org/will-transformers-take-over-artificial-intelligence-20220310/)).
 
@@ -68,7 +68,15 @@ The transformer models build on this generalization of convolution to recognize 
 
 ## 4/6/2022
 
-TBD
+Engineering always entails optimizations, and an optimization is managing constraints or simply “making compromises.” Solving the “localized” restriction in CNNs ultimately gave us the attention mechanism. However, as text is variable in many dimensions, solving constraints in one opened problems in other dimensions. A good starting overview of the scope of endless obstacles is presented [here](https://neptune.ai/blog/comprehensive-guide-to-transformers).
+
+The only practical method to approach complex problems, such as NLP, is through decomposition. Alternatively, the most promising strategy to build solutions in these contexts is to compose already proven successful steps into an ensemble of routines.
+
+Deep learning models are these abstractions, they focus on a particular aspect of the overall NLP problem, and provide a concrete solution given the specific assumptions. This pattern of iterations is highlighted [here](https://www.alexanderthamm.com/en/blog/transformer-xl-xlnet-xlm-and-ctrl/).
+
+As soon as a problem is decomposed, and piecemeal solutions are provided, it becomes crucial to be able to meaningfully compare how (relatively) “good” the components truly are. The most direct path to compare things is through numerical scores. However, “scoring” solutions relative to each other only makes sense if they both solve the same identical problems. In the case of NLP, scoring models is done using the same input datasets, see [here](https://ai.googleblog.com/2019/01/transformer-xl-unleashing-potential-of.html).
+
+While significantly reducing the visual complexity of the code, I also wanted to allow for quick comparisons of not just the results, but the actual steps encoded in the models. For convenience, I included the original pdf paper next to each model, and also altered the Python code of the models to use identical coding patterns and naming conventions. Conceptually explaining the individual models has not been my priority, as there are many excellent resources available (see [here](https://www.borealisai.com/en/blog/understanding-xlnet/)).
 
 ## 4/13/2022
 
@@ -85,3 +93,4 @@ TBD
 ## 5/4/2022
 
 TBD
+
