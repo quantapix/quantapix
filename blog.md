@@ -84,7 +84,8 @@ TBD
 
 ## 4/20/2022
 
-TBD
+https://www.uninformativ.de/blog/postings/2022-04-21/0/POSTING-en.html
+
 
 ## 4/27/2022
 
