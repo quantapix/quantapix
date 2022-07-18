@@ -1,4 +1,4 @@
-# Activities Blog for the court hearing on 6/3/2022 (without any proprietary source code)
+# Activities Blog For Court Hearings (without any proprietary source code)
 
 For the last ~5 years I have been focusing on deep learning for NLP (natural language processing). The circumstantial reasons I chose this topic are eloquently described [here](http://karpathy.github.io/2022/03/14/lecun1989/). On a personal level, I described my choice [here](https://github.com/quantapix/quantapix/blob/main/references.pdf).
 

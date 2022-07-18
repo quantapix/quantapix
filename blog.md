@@ -1,4 +1,4 @@
-# Activities Blog for the court hearing on 6/3/2022 (without any proprietary source code)
+# Activities Blog For Court Hearings (without any proprietary source code)
 
 As a consequence of my decade-long [struggle](https://github.com/quantapix/quantapix/blob/main/README.md) in a massively invalidating Mass. Family Court, I had no choice but to learn "the law" behind complex RICO litigations.
 
