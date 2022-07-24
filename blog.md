@@ -14,8 +14,6 @@ Therefore, I will switch gears, and for the next three months, I will focus on c
 
 My ongoing weekly blog will reflect this necessary switch of focus.
 
-## 7/22/2022
+## [Current blogs](https://qnarre.com/story/blog/)
 
-TBD
-
-## [Archive of previous blog](https://github.com/quantapix/quantapix/blob/main/old.md)
+## [Archive of prior blogs](https://qnarre.com/story/old/)
