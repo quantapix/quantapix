@@ -1,4 +1,4 @@
-I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in "bipolar" legal text. Here is my [resume](https://qnarre.com/resume.pdf), personal ["history"](https://qnarre.com/history.pdf), employment [disclosure](https://qnarre.com/disclosure.pdf), and non-technical [references](https://github.com/quantapix/quantapix/blob/main/references.pdf).
+I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in "bipolar" legal text. Here is my [resume](https://qnarre.com/resume.pdf), personal "[history](https://qnarre.com/history.pdf)," employment [disclosure](https://qnarre.com/disclosure.pdf), and non-technical [references](https://github.com/quantapix/quantapix/blob/main/references.pdf).
 
 My public repositories (see below) are under development with court-imposed deadlines. Therefore, I have started a [blog](https://github.com/quantapix/quantapix/blob/main/blog.md) to highlight my current, non-proprietary open source development activities.
 
