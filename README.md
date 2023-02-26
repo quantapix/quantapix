@@ -6,4 +6,4 @@ With a total of over **600+ job applications** submitted by 2/28/2023, in additi
 
 A successful application for an ordered full-time position would also mean abandoning my ~$1M investment in my company Quantapix, along with all my personal savings and my entire retirement at age 61.
 
-Additionally, if my lawsuits (see [here](https://femfas.net)) fail, I certainly will be sent to jail. If my petitions, appeals and/or lawsuits succeed in the next months or years, I would be left with no sane reason to abandon Quantapix.
+Additionally, if my lawsuits fail, I certainly will be sent to jail. If my petitions, appeals and/or lawsuits succeed in the next months or years, I would be left with no sane reason to abandon Quantapix.
