@@ -6,4 +6,4 @@ With a total of over **740 job applications** submitted by 6/7/2023, in addition
 
 A successful application for an obsessively ordered "full-time" position with a Massachusetts business would also mean abandoning my ~$1M investment in my also Massachusetts company, Quantapix, Inc., along with all my personal savings and my entire retirement at age 61.
 
-Additionally, if my lawsuits fail, I certainly will be sent to jail considering my forcedly accumulated **$325,000+** of in-arrears obligations for my dear four children (from $0 in 2018). If my petitions, appeals and/or lawsuits succeed in the next months or years, I would be left with no sane reason to abandon Quantapix.
+Additionally, if my lawsuits fail, I certainly will be sent to jail considering my forcedly accumulated **$330,000+** of in-arrears obligations for my dear four children (from $0 in 2018). If my petitions, appeals and/or lawsuits succeed in the next months or years, I would be left with no sane reason to abandon Quantapix.
