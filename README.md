@@ -1,4 +1,4 @@
-I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in "bipolar" legal text. Here is my [resume](https://qnarre.com/resume.pdf) and personal ["history."](https://qnarre.com/history.pdf)
+I am interested in algorithmically seeking out **contradictions** and **inconsistencies** in deceitful text, specifically in "bipolar" legal text. Here is my [resume](https://github.com/quantapix/quantapix/blob/main/resume.pdf) and personal ["history."](https://github.com/quantapix/quantapix/blob/main/history.pdf)
 
 I have been threatened, arrested (most recently on 1/21/2022, see my petitions, appeals and complaints to the U.S. Supreme Court, the U.S. Court of Appeals, First Circuit, and the Massachusetts Supreme Judicial Court at [femfas.net](https://femfas.net)) and was ordered to apply for 10 jobs a week.
 
