@@ -1,0 +1,11 @@
+Focused on developing state-of-the-art (SOTA) transformer models for semantic queries and narrative extraction, including temporal ordering. Pre-trained and fine-tuned legal case models in parallel with bipolar text, evaluating them for conflicts. Positioned the company to accept 1099 consulting contracts, expanding business opportunities.
+
+Served as primary caregiver for 3.5-year-old twins.
+
+Solely designed and developed an embeddable Java/EJB server. Successfully sold the two-person company to Allaire, Inc. for $25M.
+
+Served as Software Architect/Consultant to prominent clients, including Fidelity Investments, Putnam Investments, New England Mutual Life Insurance Co., Varian Semiconductor, and Syncra Systems, Inc., for 3 years.
+
+Held a Research Fellowship and Stipend at Digital Equipment Corp. in collaboration with Boston University.
+
+
