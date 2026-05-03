@@ -71,5 +71,5 @@ The two products' own repositories will join this list when they ship.
 
 ## License
 
-Each public repo carries its own LICENSE. This README and the
-organisation page itself are CC-BY-4.0.
+Each public repo carries its own LICENSE (MIT for the three
+scripts-only repos: `quantapix`, `qstudying`, `qexplaining`).

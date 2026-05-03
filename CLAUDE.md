@@ -8,9 +8,11 @@ and the repo-root `qagents/CLAUDE.md`. Don't re-litigate those.
 
 `quantapix/` is the **staging mirror** of the public org. The user
 already maintains the live org and the public repos on GitHub
-(`quantapix/.github`, `quantapix/qstudying`, `quantapix/qexplaining`,
-and any future products); copy-out from here into those repos happens
-in a separate terminal and is **not a qagents concern**.
+(`quantapix/quantapix` — the org-profile repo, rendered at the org
+page via the user-profile pattern — plus `quantapix/qstudying`,
+`quantapix/qexplaining`, and any future products); copy-out from here
+into those repos happens in a separate terminal and is **not a
+qagents concern**.
 
 Inside qagents, this directory exists so the public-facing artifacts
 (currently three READMEs) sit next to the private working tree they
@@ -38,7 +40,7 @@ the rest of the constellation as it evolves.
 ```
 quantapix/
   CLAUDE.md            (this file)
-  README.md            (parent org / .github profile README)
+  README.md            (parent org profile README — copies out to quantapix/quantapix)
   qstudying/
     README.md          (qstudying public repo README)
   qexplaining/
