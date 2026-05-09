@@ -1,4 +1,4 @@
-# CLAUDE.md — quantapix/
+# CLAUDE.md — data/quantapix/
 
 Project-specific rules for the staging tree that mirrors the public
 GitHub `quantapix` organisation. Assumes Claude Code's default guidance
@@ -6,7 +6,7 @@ and the repo-root `qagents/CLAUDE.md`. Don't re-litigate those.
 
 ## 1. Role — staging only
 
-`quantapix/` is the **staging mirror** of the public org. The user
+`data/quantapix/` is the **staging mirror** of the public org. The user
 already maintains the live org and the public repos on GitHub
 (`quantapix/quantapix` — the org-profile repo, rendered at the org
 page via the user-profile pattern — plus `quantapix/qstudying`,
@@ -38,7 +38,7 @@ the rest of the constellation as it evolves.
 ## 3. Layout
 
 ```
-quantapix/
+data/quantapix/
   CLAUDE.md            (this file)
   README.md            (parent org profile README — copies out to quantapix/quantapix)
   qstudying/
@@ -46,6 +46,11 @@ quantapix/
   qexplaining/
     README.md          (qexplaining public repo README)
 ```
+
+Lives under `data/` rather than at the repo root because it is content
+shared across `studying/` and `explaining/` (the source-of-truth working
+subprojects), not a working subproject in its own right. Same shape and
+policies as `data/specs/`, `data/renders/`, `data/gics/`.
 
 Add a new subdir only when the user has created the corresponding
 public repo. New subdirs follow the same shape: a README.md as the
@@ -107,7 +112,7 @@ Before telling the user "ready to copy out", verify:
 # deliberately not duplicated here so this file remains safe to mirror.
 
 # (b) link integrity — every referenced URL resolves on the public side
-grep -RoE "https?://[^ )]+" quantapix/ | sort -u
+grep -RoE "https?://[^ )]+" data/quantapix/ | sort -u
 
 # (c) drift — diff the README against its source (focus-areas.md / outline.md)
 # manually; the README is allowed to drop content but not to reorder it
