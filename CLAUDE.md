@@ -1,33 +1,70 @@
 # CLAUDE.md — data/quantapix/
 
+**Kind:** render-cache
+**Producer-of-record:** manual mirror (sessions re-render the per-repo
+READMEs from `studying/focus-areas.md`, `explaining/outline.md`, etc.;
+copy-out to the live `quantapix` GitHub org is external to qagents)
+**Consumers:** none in-repo (external: github.com/quantapix)
+**Schema:** one `<repo>-public/README.md` per public repo, plus the
+parent `README.md` for the org-profile (`quantapix/quantapix`); see § 3.
+**Refresh cadence:** weekly during the donation drive
+(2026-06-01 → 2026-12-01); slower otherwise
+**Write-lock posture:** `.data-write-lock` (manual lane) — re-render
+sessions write canonical directly
+
 Project-specific rules for the staging tree that mirrors the public
 GitHub `quantapix` organisation. Assumes Claude Code's default guidance
-and the repo-root `qagents/CLAUDE.md`. Don't re-litigate those.
+and the repo-root `qagents/CLAUDE.md`. Don't re-litigate those. See
+`data/specs/data-charter-2026-05-17.md` § 8.1 — the kind label here is
+**render-cache** by default; `external-staging` is reserved if/when the
+charter ever flips this entry.
 
 ## 1. Role — staging only
 
 `data/quantapix/` is the **staging mirror** of the public org. The user
 already maintains the live org and the public repos on GitHub
 (`quantapix/quantapix` — the org-profile repo, rendered at the org
-page via the user-profile pattern — plus `quantapix/qstudying`,
-`quantapix/qexplaining`, and any future products); copy-out from here
-into those repos happens in a separate terminal and is **not a
-qagents concern**.
+page via the user-profile pattern — plus `quantapix/qstudying-public`,
+`quantapix/qexplaining-public`, and the four 2026-06-01 launch repos
+`qagents-public` / `qnarre-public` / `qresev-public` /
+`qdonating-public`); copy-out from here into those repos happens in a
+separate terminal and is **not a qagents concern**.
 
 Inside qagents, this directory exists so the public-facing artifacts
-(currently three READMEs) sit next to the private working tree they
-window into — `studying/` and `explaining/` — and stay consistent with
-the rest of the constellation as it evolves.
+sit next to the private working trees they window into — `studying/`,
+`explaining/`, `proving/`, `accounting/`, `donating/`, and the
+constellation as a whole — and stay consistent as those evolve.
+
+**Naming convention (locked 2026-05-15; product-rename 2026-05-17).**
+All public repos under the `quantapix` org carry the `-public` suffix,
+with the org-profile repo `quantapix/quantapix` as the only exception.
+The suffix marks the repo as the redacted public slice of a private
+working tree of the same root name **except** for the two product-named
+slices `qnarre-public` (legal-domain proving slice; backs the Qnarre
+product) and `qresev-public` (financial-domain accounting slice; backs
+the Qresev product). Those two name the product the slice supports
+rather than the private subproject directory, because the product name
+is what donors and reviewers will see on the live endpoints
+(`qnarre.quantapix.com`, `qresev.quantapix.com`). Recorded renames:
+`qstudying`→`qstudying-public` and `qexplaining`→`qexplaining-public`
+(2026-05-15, suffix unification); `qproving-public`→`qnarre-public`
+(2026-05-17, product-rename to match the qresev-public pattern). All
+renames happen on the live GitHub side first; this directory mirrors
+the renamed shape immediately.
 
 ## 2. What this directory is NOT
 
 - **Not a git surface.** Do not `git init` here, do not add this tree
-  as a submodule, do not configure remotes. The qagents repo already
-  tracks these files. The public org has its own repos that the user
-  syncs by hand.
-- **Not a deploy target.** No CI hook, no rsync, no GitHub-CLI push
-  from this session. If a future workflow needs automated sync, the
-  user will introduce it deliberately; until then, copy-out is manual.
+  as a submodule, do not configure remotes on the subdirs themselves.
+  The qagents repo tracks these files.
+- **Deploy bridge: `git push-quantapix`.** The session-invocable
+  wrapper at `~/clone/setup/git-push-quantapix` (symlinked to
+  `~/.local/bin/`) is the only allowed push surface — see § 7. It
+  keeps its own scratch git clones at `~/.cache/quantapix-push/<repo>/`
+  outside the qagents tree and rsyncs from here into them. Replaced
+  the prior manual-copy-out workflow on 2026-05-18 when the user
+  consolidated `~/clone/{quantapix,qstudying,qexplaining}/` into
+  qagents.
 - **Not the source of truth for content already pinned elsewhere.**
   The 10 Lean4 focus areas live in `studying/focus-areas.md`; the
   5×10 video plan lives in `explaining/outline.md`. The READMEs here
@@ -39,13 +76,32 @@ the rest of the constellation as it evolves.
 
 ```
 data/quantapix/
-  CLAUDE.md            (this file)
-  README.md            (parent org profile README — copies out to quantapix/quantapix)
-  qstudying/
-    README.md          (qstudying public repo README)
-  qexplaining/
-    README.md          (qexplaining public repo README)
+  CLAUDE.md                 (this file; not pushed)
+  README.md                 (parent org profile — copies out to quantapix/quantapix)
+  LICENSE                   (MIT; org-profile)
+  qstudying-public/
+    README.md               (qstudying-public; refreshed from studying/focus-areas.md)
+    LICENSE                 (MIT; content-class)
+  qexplaining-public/
+    README.md               (qexplaining-public; refreshed from explaining/outline.md)
+    LICENSE                 (MIT; content-class)
+  qagents-public/
+    README.md               (umbrella; redacted CLAUDE.md graph index)
+    LICENSE.txt             (Apache-2.0; code-class)
+  qnarre-public/
+    README.md               (proving/ slice backing Qnarre: federal civil-rights axiom set)
+    LICENSE.txt             (Apache-2.0; code-class)
+  qresev-public/
+    README.md               (accounting/ slice backing Qresev: financial-strategy axiom set)
+    LICENSE.txt             (Apache-2.0; code-class)
+  qdonating-public/
+    README.md               (donating/ slice: drive + ledgers + weekly digests)
+    LICENSE                 (MIT; content-class)
 ```
+
+The org-profile slot is `data/quantapix/` top-level — README + LICENSE
+only. The `-public` subdirs are themselves separate live repos and the
+deploy bridge handles them independently (§ 7).
 
 Lives under `data/` rather than at the repo root because it is content
 shared across `studying/` and `explaining/` (the source-of-truth working
@@ -53,10 +109,10 @@ subprojects), not a working subproject in its own right. Same shape and
 policies as `data/specs/`, `data/renders/`, `data/gics/`.
 
 Add a new subdir only when the user has created the corresponding
-public repo. New subdirs follow the same shape: a README.md as the
-canonical entry, optional `LICENSE` if the user wants license tracking
-in qagents too (today they don't — license files are managed live in
-the public repos).
+public repo. New subdirs follow the same shape: a `README.md` as the
+canonical entry plus a `LICENSE` (MIT) for content-class repos or
+`LICENSE.txt` (Apache-2.0) for code-class repos — the split is the
+load-bearing convention, tracked inside qagents since 2026-05-18.
 
 ## 4. Voice + redaction guardrails
 
@@ -89,14 +145,28 @@ any other public-site copy:
 
 ## 5. Refresh cadence
 
-The two child READMEs are the **public-facing window** into private
+The child READMEs are the **public-facing window** into private
 qagents activity, refreshed weekly:
 
-- `qstudying/README.md` ⮸ `studying/focus-areas.md` — when the user
-  re-ranks focus areas, drops a topic, or adds a new active thread,
-  re-render the README and the user copies out.
-- `qexplaining/README.md` ⮸ `explaining/outline.md` — when subjects
-  are renamed, P-tags shift, or per-script anchors land, re-render.
+- `qstudying-public/README.md` ⮸ `studying/focus-areas.md` — when the
+  user re-ranks focus areas, drops a topic, or adds a new active
+  thread, re-render the README and the user copies out.
+- `qexplaining-public/README.md` ⮸ `explaining/outline.md` — when
+  subjects are renamed, P-tags shift, or per-script anchors land,
+  re-render.
+- `qagents-public/README.md` ⮸ root `CLAUDE.md` + every subproject
+  `CLAUDE.md` — refresh when a subproject is added, retired, or a
+  cross-subproject convention shifts.
+- `qnarre-public/README.md` ⮸ `proving/CLAUDE.md` +
+  `proving/Proving/<Framework>/` — refresh when an axiom set lands or
+  a predicate stub shape changes.
+- `qresev-public/README.md` ⮸ `accounting/CLAUDE.md` +
+  `accounting/Accounting/<Framework>/` — same shape as
+  `qnarre-public`.
+- `qdonating-public/README.md` ⮸ `donating/drive.md` +
+  `donating/ledger/` + `donating/weekly/` — refresh on every monthly
+  ledger and every Friday weekly digest during the drive window
+  (2026-06-01 → 2026-12-01).
 
 The parent `README.md` only changes when the team, the thesis, the
 public-repo roster, or the contact channel changes — slower cadence.
@@ -122,7 +192,36 @@ grep -RoE "https?://[^ )]+" data/quantapix/ | sort -u
 (a) must come back empty. (b) is advisory — flag dead URLs but don't
 auto-edit. (c) is judgment.
 
-## 7. Scope boundary
+## 7. Deploy bridge — `git push-quantapix`
+
+`~/clone/setup/git-push-quantapix` (symlinked to `~/.local/bin/`) is
+the only allowed push surface. Invoke as `git push-quantapix` from
+any cwd.
+
+- Scratch git clones live at `~/.cache/quantapix-push/<repo>/`; auto-
+  cloned on first run, then `git fetch + reset --hard origin/<default>`
+  each subsequent run.
+- `rsync -a --exclude=.git` (no `--delete`) carries the source into
+  the scratch tree. Live-only files (anything that exists in the
+  GitHub repo but not under `data/quantapix/`) survive. Rename/delete
+  on the qagents side still requires a manual `git rm` in the scratch
+  clone.
+- The org-profile slot uses `--exclude='*/'` so only top-level files
+  of `data/quantapix/` are synced (the `-public` subdirs are
+  themselves separate repos handled by other iterations).
+- If the scratch tree has no diff after rsync, the repo is skipped.
+  Otherwise: commit `sync from data/quantapix/ <UTC-ts>` and push
+  `origin <default>`.
+- `--dry-run` rsyncs and shows `git diff --stat` per repo without
+  committing/pushing.
+- Positional args filter to a subset:
+  `git push-quantapix qnarre-public qresev-public`.
+
+GitHub-only. Private working trees (`qagents`, `dot.claude`, etc.)
+still use `git push-all` for the github+aws+qblk fan-out — see
+`serving/CLAUDE.md` § 9.
+
+## 8. Scope boundary
 
 Same as the rest of the constellation: this subproject does not import
 from `analyzing/`, `trading/`, `proving/`, etc., and they do not

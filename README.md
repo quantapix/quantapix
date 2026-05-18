@@ -56,12 +56,27 @@ public surface of this organisation is the first two of the three:
 **learning** and **attention**. Both are weekly-refreshed curated
 windows into the private working repository's activities.
 
+The 2026-06-01 → 2026-12-01 window is also the window of a **public
+donation drive** backing the framework. The drive funds four exclusive-use
+buckets (a Max20 subscription whose included $200/month SDK credit pool
+covers all programmatic LLM calls — see
+[`qdonating-public`](https://github.com/quantapix/qdonating-public)
+for the per-tier breakdown — a legal-research MCP subscription, AWS
+billing, and federal docketing fees). The drive does not gate the work;
+it caps the rate at which the four fixed costs eat into non-engineering
+time. The work, including the public-repo refresh cadence, runs whether
+or not the drive funds it.
+
 ## Public repos under this organisation
 
 | Repo | Role | Cadence |
 |---|---|---|
-| [`qstudying`](https://github.com/quantapix/qstudying) | Lean4 expert-track focus areas + OSS contribution targets that back `proving/` (Qnarre) and `accounting/` (Qresev). The "where to read, what to write down" companion. | weekly-refreshed |
-| [`qexplaining`](https://github.com/quantapix/qexplaining) | 50-video explainer arc (5 topics × 10 subjects), narrated by **Janet**, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window. | weekly-refreshed |
+| [`qstudying-public`](https://github.com/quantapix/qstudying-public) | Lean4 expert-track focus areas + OSS contribution targets that back the proving and accounting kernels. The "where to read, what to write down" companion. | weekly-refreshed |
+| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), narrated by **Janet**, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window. | weekly-refreshed |
+| [`qagents-public`](https://github.com/quantapix/qagents-public) | Umbrella — the redacted `CLAUDE.md` graph that governs AI-assisted authorship across the framework. The "how the practice runs" companion. | weekly-refreshed from 2026-06-01 |
+| [`qnarre-public`](https://github.com/quantapix/qnarre-public) | Redacted slice of the legal-domain proving subproject backing the **Qnarre** product: Lean4 axiom set for civil RICO + §§ 1981/1983/1985(3) + Title VI, with predicate stubs and a thin driver. | weekly-refreshed from 2026-06-01 |
+| [`qresev-public`](https://github.com/quantapix/qresev-public) | Redacted slice of the financial-domain accounting subproject backing the **Qresev** product: Lean4 axiom set for TREND / MOMENTUM / OPTIONS-RISK / SECTOR / DRAWDOWN frameworks. | weekly-refreshed from 2026-06-01 |
+| [`qdonating-public`](https://github.com/quantapix/qdonating-public) | Redacted slice of the public donation drive: pitch, deliverable promises, monthly ledgers, weekly digests. Six-month window 2026-06-01 → 2026-12-01. | weekly-refreshed from 2026-06-01 |
 
 The two products' own repositories will join this list when they ship.
 
@@ -71,5 +86,7 @@ The two products' own repositories will join this list when they ship.
 
 ## License
 
-Each public repo carries its own LICENSE (MIT for the three
-scripts-only repos: `quantapix`, `qstudying`, `qexplaining`).
+Each public repo carries its own LICENSE. MIT for the code-bearing
+repos (`quantapix`, `qstudying-public`, `qexplaining-public`,
+`qagents-public`, `qnarre-public`, `qresev-public`); CC-BY-4.0 for
+the prose-only `qdonating-public`.
