@@ -86,7 +86,16 @@ The two products' own repositories will join this list when they ship.
 
 ## License
 
-Each public repo carries its own LICENSE. MIT for the code-bearing
-repos (`quantapix`, `qstudying-public`, `qexplaining-public`,
-`qagents-public`, `qnarre-public`, `qresev-public`); CC-BY-4.0 for
-the prose-only `qdonating-public`.
+Each public repo carries its own LICENSE. The split is content-class
+vs. code-class:
+
+- **MIT** (content-class — prose, plans, READMEs that happen to embed
+  short code snippets): `quantapix` (this org-profile repo),
+  `qstudying-public`, `qexplaining-public`, `qdonating-public`.
+- **Apache-2.0** (code-class — Lean axiom sets, predicate stubs,
+  drivers, framework code redacted for public consumption):
+  `qagents-public`, `qnarre-public`, `qresev-public`.
+
+Content-class repos ship a top-level `LICENSE`; code-class repos ship
+a top-level `LICENSE.txt`. The filename split is load-bearing inside
+the staging tree; the live repos preserve it on push.
