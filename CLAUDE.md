@@ -86,8 +86,18 @@ data/quantapix/
     README.md               (qexplaining-public; refreshed from explaining/outline.md)
     LICENSE                 (MIT; content-class)
   qagents-public/
-    README.md               (umbrella; redacted CLAUDE.md graph index)
-    LICENSE.txt             (Apache-2.0; code-class)
+    README.md               (umbrella; eight-theme rule-set + memory + recall narrative)
+    LICENSE                 (Apache-2.0; code lane)
+    LICENSE-MIT             (MIT; prose + AI-agentic workflow lane)
+    claude-md/              (redacted CLAUDE.md graph — root + per-subproject + data hubs)
+      README.md
+      root.md / <sub>.md / data/{data,specs,tmp,quantapix}.md  (per Phase 1+ rollout)
+    memory/                 (redacted auto-memory topic-file mirror)
+      README.md
+      MEMORY.md + feedback_*.md + project_*.md + reference_*.md  (per Phase 2+ rollout)
+    memsearch/              (curated daily memos; opt-in via `<!-- publish: yes -->`)
+      README.md
+      <sub>/YYYY-MM-DD.md   (per quarterly sweep)
   qnarre-public/
     README.md               (proving/ slice backing Qnarre: federal civil-rights axiom set)
     LICENSE.txt             (Apache-2.0; code-class)
@@ -110,9 +120,11 @@ policies as `data/specs/`, `data/renders/`, `data/gics/`.
 
 Add a new subdir only when the user has created the corresponding
 public repo. New subdirs follow the same shape: a `README.md` as the
-canonical entry plus a `LICENSE` (MIT) for content-class repos or
-`LICENSE.txt` (Apache-2.0) for code-class repos — the split is the
-load-bearing convention, tracked inside qagents since 2026-05-18.
+canonical entry plus a `LICENSE` for content-class repos (MIT) or
+code-class repos (Apache-2.0). `qagents-public/` is the lone exception
+— it carries **both** `LICENSE` (Apache, code lane) and `LICENSE-MIT`
+(MIT, prose + AI-agentic workflow lane) per the re-charter spec
+`data/specs/qagents-public-repo-2026-05-25.md`.
 
 ## 4. Voice + redaction guardrails
 
@@ -154,9 +166,18 @@ qagents activity, refreshed weekly:
 - `qexplaining-public/README.md` ⮸ `explaining/outline.md` — when
   subjects are renamed, P-tags shift, or per-script anchors land,
   re-render.
-- `qagents-public/README.md` ⮸ root `CLAUDE.md` + every subproject
-  `CLAUDE.md` — refresh when a subproject is added, retired, or a
-  cross-subproject convention shifts.
+- `qagents-public/README.md` + `qagents-public/{claude-md,memory,memsearch}/README.md`
+  ⮸ root `CLAUDE.md` + every published subproject `CLAUDE.md` — refresh
+  when a subproject is added, retired, or a cross-subproject convention
+  shifts. Three mirror subtrees feed the umbrella:
+  - `claude-md/` ⮸ root + published `<sub>/CLAUDE.md` + four shared-hub
+    `data/*/CLAUDE.md` — **weekly** redacted sync via
+    `data/quantapix/scripts/sync-mirror.sh`.
+  - `memory/` ⮸ `~/.claude/projects/-Users-qpix-clone-qagents/memory/**`
+    — **weekly** redacted sync (same tool; topic-file rewrites authored
+    per-entry).
+  - `memsearch/` ⮸ per-sub `<sub>/.memsearch/memory/**` — **quarterly**
+    batch sweep; only memos carrying `<!-- publish: yes -->` flow in.
 - `qnarre-public/README.md` ⮸ `proving/CLAUDE.md` +
   `proving/Proving/<Framework>/` — refresh when an axiom set lands or
   a predicate stub shape changes.
