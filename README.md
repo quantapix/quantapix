@@ -16,6 +16,10 @@ source.
   specced from the inside — federal civil-rights litigation, pro se,
   against an institutional defendant. The long version. quantapix.com
   is the short one.
+- **<https://www.youtube.com/@Quantapix>** — the video channel. A 5×10
+  explainer arc (five topics, ten subjects each), narrated by Janet over
+  animated cards and graphics; every video anchors back to a real file in
+  the working repository. First episodes landing June 2026.
 
 ## Team
 
@@ -66,6 +70,21 @@ billing, and federal docketing fees). The drive does not gate the work;
 it caps the rate at which the four fixed costs eat into non-engineering
 time. The work, including the public-repo refresh cadence, runs whether
 or not the drive funds it.
+
+## Help axiomatize the U.S. Code, in the age of AI
+
+The framework's largest open program is a kernel-checked Lean4 encoding
+of the **entire** United States Code — all 54 titles, ~65,700 sections —
+produced redundantly by independent agent teams and reconciled in the
+kernel. That program is **open to outside contributors**: it works over
+public federal statutes only, so it carries no privacy-floor surface, and
+it is the natural place to build the project in the open. The project
+today is a single developer working with AI assistance, now opening this
+effort to contributors. Pick up a section, a predicate, or a title —
+start at [`qnarre-public`](https://github.com/quantapix/qnarre-public)
+(CONTRIBUTING + good-first-issues) and the
+[`qagents-public`](https://github.com/quantapix/qagents-public)
+Discussions.
 
 ## Public repos under this organisation
 
