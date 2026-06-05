@@ -27,7 +27,7 @@ Two contributors. One software developer; one expert AI assistant.
 
 - **Imre Kifor** — sole developer. Engineering, statute encoding,
   predicate authoring, kernel design, product surfaces.
-- **Claude Code (Opus)** — third teammate. Per-task subagents under
+- **Claude Code (Opus)** — second teammate. Per-task subagents under
   written `CLAUDE.md` contracts; persistent semantic memory across
   sessions; auditable tool use. The assistant writes, reviews, and
   refactors against the same kernel and predicates the developer reads.
@@ -88,14 +88,14 @@ Discussions.
 
 ## Public repos under this organisation
 
-| Repo                                                                    | Role                                                                                                                                                                                            | Cadence                          |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| [`qagents-public`](https://github.com/quantapix/qagents-public)         | Umbrella — the redacted `CLAUDE.md` graph that governs AI-assisted authorship across the framework. The "how the practice runs" companion.                                                      | weekly-refreshed from 2026-06-01 |
-| [`qdonating-public`](https://github.com/quantapix/qdonating-public)     | Redacted slice of the public donation drive: pitch, deliverable promises, monthly ledgers, weekly digests. Six-month window 2026-06-01 → 2026-12-01.                                            | weekly-refreshed from 2026-06-01 |
-| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), narrated by **Janet**, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window.            | weekly-refreshed                 |
-| [`qnarre-public`](https://github.com/quantapix/qnarre-public)           | Redacted legal-domain slice backing the **Qnarre** product: Lean4 axiom set for civil RICO + §§ 1981/1983/1985(3) + Title VI, with predicate stubs, a thin driver, and the full-U.S.-Code axiomatization program.                | weekly-refreshed from 2026-06-01 |
-| [`qresev-public`](https://github.com/quantapix/qresev-public)           | Redacted financial-domain umbrella backing the **Qresev** product: the Lean4 evaluator (TREND / MOMENTUM / OPTIONS-RISK / SECTOR / DRAWDOWN) plus the market-inspection and portfolio-management surfaces that feed it.                | weekly-refreshed from 2026-06-01 |
-| [`qstudying-public`](https://github.com/quantapix/qstudying-public)     | Lean4 expert-track focus areas + OSS contribution targets that back the proving and accounting kernels. The "where to read, what to write down" companion.                                      | weekly-refreshed                 |
+| Repo                                                                    | Role                                                                                                                                                                                                                    | Cadence                          |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| [`qagents-public`](https://github.com/quantapix/qagents-public)         | Umbrella — the redacted `CLAUDE.md` graph that governs AI-assisted authorship across the framework. The "how the practice runs" companion.                                                                              | weekly-refreshed from 2026-06-01 |
+| [`qdonating-public`](https://github.com/quantapix/qdonating-public)     | Redacted slice of the public donation drive: pitch, deliverable promises, monthly ledgers, weekly digests. Six-month window 2026-06-01 → 2026-12-01.                                                                    | weekly-refreshed from 2026-06-01 |
+| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), narrated by **Janet**, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window.                                    | weekly-refreshed                 |
+| [`qnarre-public`](https://github.com/quantapix/qnarre-public)           | Redacted legal-domain slice backing the **Qnarre** product: Lean4 axiom set for civil RICO + §§ 1981/1983/1985(3) + Title VI, with predicate stubs, a thin driver, and the full-U.S.-Code axiomatization program.       | weekly-refreshed from 2026-06-01 |
+| [`qresev-public`](https://github.com/quantapix/qresev-public)           | Redacted financial-domain umbrella backing the **Qresev** product: the Lean4 evaluator (TREND / MOMENTUM / OPTIONS-RISK / SECTOR / DRAWDOWN) plus the market-inspection and portfolio-management surfaces that feed it. | weekly-refreshed from 2026-06-01 |
+| [`qstudying-public`](https://github.com/quantapix/qstudying-public)     | Lean4 expert-track focus areas + OSS contribution targets that back the proving and accounting kernels. The "where to read, what to write down" companion.                                                              | weekly-refreshed                 |
 
 The two products' own repositories will join this list when they ship.
 
