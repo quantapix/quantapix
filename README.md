@@ -17,7 +17,7 @@ source.
   against an institutional defendant. The long version. quantapix.com
   is the short one.
 - **<https://www.youtube.com/@Quantapix>** — the video channel. A 5×10
-  explainer arc (five topics, ten subjects each), narrated by Janet over
+  explainer arc (five topics, ten subjects each), AI-narrated over
   animated cards and graphics; every video anchors back to a real file in
   the working repository. First episodes landing June 2026.
 
@@ -73,10 +73,13 @@ or not the drive funds it.
 
 ## Help axiomatize the U.S. Code, in the age of AI
 
-The framework's largest open program is a kernel-checked Lean4 encoding
-of the **entire** United States Code — all 54 titles, ~65,700 sections —
-produced redundantly by independent agent teams and reconciled in the
-kernel. That program is **open to outside contributors**: it works over
+The framework's largest open program **aims to** produce a kernel-checked
+Lean4 encoding of the operative content of the United States Code — all 54
+titles, on the order of tens of thousands of sections — built redundantly
+by independent agent teams and reconciled in the kernel. The encoding is
+**asserted-and-pending**: a growing fraction of the Code is encoded and
+kernel-scored today, with the full corpus an open goal, not a finished
+artifact. The program is **open to outside contributors**: it works over
 public federal statutes only, so it carries no privacy-floor surface, and
 it is the natural place to build the project in the open. The project
 today is a single developer working with AI assistance, now opening this
@@ -92,7 +95,7 @@ Discussions.
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | [`qagents-public`](https://github.com/quantapix/qagents-public)         | Umbrella — the redacted `CLAUDE.md` graph that governs AI-assisted authorship across the framework. The "how the practice runs" companion.                                                                              | weekly-refreshed from 2026-06-01 |
 | [`qdonating-public`](https://github.com/quantapix/qdonating-public)     | Redacted slice of the public donation drive: pitch, deliverable promises, monthly ledgers, weekly digests. Six-month window 2026-06-01 → 2026-12-01.                                                                    | weekly-refreshed from 2026-06-01 |
-| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), narrated by **Janet**, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window.                                    | weekly-refreshed                 |
+| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), AI-narrated, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window.                                    | weekly-refreshed                 |
 | [`qnarre-public`](https://github.com/quantapix/qnarre-public)           | Redacted legal-domain slice backing the **Qnarre** product: Lean4 axiom set for civil RICO + §§ 1981/1983/1985(3) + Title VI, with predicate stubs, a thin driver, and the full-U.S.-Code axiomatization program.       | weekly-refreshed from 2026-06-01 |
 | [`qresev-public`](https://github.com/quantapix/qresev-public)           | Redacted financial-domain umbrella backing the **Qresev** product: the Lean4 evaluator (TREND / MOMENTUM / OPTIONS-RISK / SECTOR / DRAWDOWN) plus the market-inspection and portfolio-management surfaces that feed it. | weekly-refreshed from 2026-06-01 |
 | [`qstudying-public`](https://github.com/quantapix/qstudying-public)     | Lean4 expert-track focus areas + OSS contribution targets that back the proving and accounting kernels. The "where to read, what to write down" companion.                                                              | weekly-refreshed                 |
