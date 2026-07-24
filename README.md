@@ -6,10 +6,20 @@ The method: wrap a Lean4 kernel around LLM-backed predicate functions.
 Predicates return Booleans with evidence. The kernel composes the proof.
 The two products are **Qnarre** — an axiomatic verifier for legal
 complaints — and **Qresev** — an axiomatic evaluator for stocks and
-portfolios. Same kernel, different statutes, different OHLCV. Both ship
-as early-beta on or about **2026-06-01**, each with a live trace:
-every `True` or `False` the system returns is anchored to a quoted
-source.
+portfolios. Same kernel, different statutes, different OHLCV. Each will
+ship with a live trace: every `True` or `False` the system returns is
+anchored to a quoted source.
+
+**Neither is open to the public yet** (2026-07-24). This line used to
+read "both ship as early-beta on or about 2026-06-01"; that date was the
+opening of the six-month drive window, not a ship date, and stating it as
+one was wrong. The early-beta opening — a hosted verifier and evaluator
+you can point at your own input — is a **Month 3+ deliverable of that
+window**. What is reachable today is engineering surface, not the launch:
+`qresev.quantapix.com` answers publicly and streams a kernel verdict for a
+committed worked example; `qnarre.quantapix.com` and its streaming
+proof-graph UI remain the launch deliverable. Per-repo detail is in each
+repo's `STATUS.md`, refreshed weekly.
 
 - **<https://quantapix.com>** — engineering output (code, schemas, traces, framework specs).
 - **<https://femfas.net>** — motivational record. The system that was
@@ -19,7 +29,8 @@ source.
 - **<https://www.youtube.com/@Quantapix>** — the video channel. A 5×10
   explainer arc (five topics, ten subjects each), AI-narrated over
   animated cards and graphics; every video anchors back to a real file in
-  the working repository. First episodes landing June 2026.
+  the working repository. **Eight episodes are live** as of 2026-07-24;
+  the remaining forty-two land on a rolling cadence.
 
 ## Team
 
@@ -55,7 +66,7 @@ workflows that:
 3. **convey how a product works** (or how it should be used) once the
    product is shipping.
 
-Until Qnarre and Qresev start early beta on or about 2026-06-01, the
+Until Qnarre and Qresev open to early beta, the
 public surface of this organisation is the first two of the three:
 **learning** and **attention**. Both are weekly-refreshed curated
 windows into the private working repository's activities.
@@ -84,10 +95,13 @@ public federal statutes only, so it carries no privacy-floor surface, and
 it is the natural place to build the project in the open. The project
 today is a single developer working with AI assistance, now opening this
 effort to contributors. Pick up a section, a predicate, or a title —
-start at [`qnarre-public`](https://github.com/quantapix/qnarre-public)
-(CONTRIBUTING + good-first-issues) and the
-[`qagents-public`](https://github.com/quantapix/qagents-public)
-Discussions.
+start at
+[`qnarre-public/CONTRIBUTING.md`](https://github.com/quantapix/qnarre-public/blob/main/CONTRIBUTING.md),
+then open an issue on that repo to claim a unit before encoding it. It
+links a curated starter set — nine tasks, each a verified defect in the tree
+with its acceptance command and the commands that re-derive its counts. They
+are not yet filed as individual issues, and Discussions are not enabled; the
+file says so plainly rather than leaving you to discover it.
 
 ## Public repos under this organisation
 
@@ -104,7 +118,9 @@ The two products' own repositories will join this list when they ship.
 
 ## Contact
 
-[`quantapix@gmail.com`](mailto:quantapix@gmail.com) is the only contact channel.
+[github.com/quantapix](https://github.com/quantapix) is the only contact channel —
+issues and Discussions on the repos above. There is no contact email: routing
+here keeps every question, including drive questions, answerable in public.
 
 ## License
 
