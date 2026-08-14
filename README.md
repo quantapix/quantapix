@@ -98,10 +98,12 @@ effort to contributors. Pick up a section, a predicate, or a title —
 start at
 [`qnarre-public/CONTRIBUTING.md`](https://github.com/quantapix/qnarre-public/blob/main/CONTRIBUTING.md),
 then open an issue on that repo to claim a unit before encoding it. It
-links a curated starter set — nine tasks, each a verified defect in the tree
-with its acceptance command and the commands that re-derive its counts. They
-are not yet filed as individual issues, and Discussions are not enabled; the
-file says so plainly rather than leaving you to discover it.
+links a curated starter set of nine numbered tasks with acceptance commands and
+the commands that re-derive their counts. Four have since been swept internally
+and are marked closed in place; the five still open were re-derived against the
+working tree on 2026-08-07. They are not yet filed as individual issues, and
+Discussions are not enabled; the file says so plainly rather than leaving you to
+discover it.
 
 ## Public repos under this organisation
 
