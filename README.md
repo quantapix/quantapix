@@ -10,7 +10,7 @@ portfolios. Same kernel, different statutes, different OHLCV. Each will
 ship with a live trace: every `True` or `False` the system returns is
 anchored to a quoted source.
 
-**Neither is open to the public yet** (2026-07-24). This line used to
+**Neither is open to the public yet** (2026-08-21). This line used to
 read "both ship as early-beta on or about 2026-06-01"; that date was the
 opening of the six-month drive window, not a ship date, and stating it as
 one was wrong. The early-beta opening — a hosted verifier and evaluator
@@ -18,8 +18,9 @@ you can point at your own input — is a **Month 3+ deliverable of that
 window**. What is reachable today is engineering surface, not the launch:
 `qresev.quantapix.com` answers publicly and streams a kernel verdict for a
 committed worked example; `qnarre.quantapix.com` and its streaming
-proof-graph UI remain the launch deliverable. Per-repo detail is in each
-repo's `STATUS.md`, refreshed weekly.
+proof-graph UI remain the launch deliverable. Per-repo detail is in the
+per-repo `STATUS.md` files, refreshed weekly; the drive repo carries its
+monthly ledgers and weekly digests instead.
 
 - **<https://quantapix.com>** — engineering output (code, schemas, traces, framework specs).
 - **<https://femfas.net>** — motivational record. The system that was
@@ -29,8 +30,9 @@ repo's `STATUS.md`, refreshed weekly.
 - **<https://www.youtube.com/@Quantapix>** — the video channel. A 5×10
   explainer arc (five topics, ten subjects each), AI-narrated over
   animated cards and graphics; every video anchors back to a real file in
-  the working repository. **Eight episodes are live** as of 2026-07-24;
-  the remaining forty-two land on a rolling cadence.
+  the working repository. **Eight episodes are live** as of 2026-08-21;
+  further episodes land on a rolling cadence as each clears its release
+  gates.
 
 ## Team
 
@@ -73,11 +75,10 @@ windows into the private working repository's activities.
 
 The 2026-06-01 → 2026-12-01 window is also the window of a **public
 donation drive** backing the framework. The drive funds four exclusive-use
-buckets (a Max20 subscription whose included $200/month SDK credit pool
-covers all programmatic LLM calls — see
+buckets: an AI-assistant subscription that carries the engineering work — see
 [`qdonating-public`](https://github.com/quantapix/qdonating-public)
-for the per-tier breakdown — a legal-research MCP subscription, AWS
-billing, and federal docketing fees). The drive does not gate the work;
+for the per-bucket breakdown — a legal-research MCP subscription, AWS
+billing, and federal docketing fees. The drive does not gate the work;
 it caps the rate at which the four fixed costs eat into non-engineering
 time. The work, including the public-repo refresh cadence, runs whether
 or not the drive funds it.
@@ -85,9 +86,10 @@ or not the drive funds it.
 ## Help axiomatize the U.S. Code, in the age of AI
 
 The framework's largest open program **aims to** produce a kernel-checked
-Lean4 encoding of the operative content of the United States Code — all 54
-titles, on the order of tens of thousands of sections — built redundantly
-by independent agent teams and reconciled in the kernel. The encoding is
+Lean4 encoding of the operative content of the United States Code — all 53
+titles, appendix volumes excluded, on the order of tens of thousands of
+sections — built redundantly by independent agent teams and reconciled in
+the kernel. The encoding is
 **asserted-and-pending**: a growing fraction of the Code is encoded and
 kernel-scored today, with the full corpus an open goal, not a finished
 artifact. The program is **open to outside contributors**: it works over
@@ -101,7 +103,8 @@ then open an issue on that repo to claim a unit before encoding it. It
 links a curated starter set of nine numbered tasks with acceptance commands and
 the commands that re-derive their counts. Four have since been swept internally
 and are marked closed in place; the five still open were re-derived against the
-working tree on 2026-08-07. They are not yet filed as individual issues, and
+working tree on 2026-08-14, when all five reproduced their per-directory counts
+unchanged. They are not yet filed as individual issues, and
 Discussions are not enabled; the file says so plainly rather than leaving you to
 discover it.
 
@@ -121,12 +124,13 @@ The two products' own repositories will join this list when they ship.
 ## Contact
 
 [github.com/quantapix](https://github.com/quantapix) is the only contact channel —
-issues and Discussions on the repos above. There is no contact email: routing
-here keeps every question, including drive questions, answerable in public.
+issues on the repos above. Discussions are not enabled, so an issue is the way
+in. There is no contact email: routing here keeps every question, including
+drive questions, answerable in public.
 
 ## License
 
-Each public repo carries its own LICENSE. The split is content-class
+Each public repo carries its own licence. The split is content-class
 vs. code-class:
 
 - **MIT** (content-class — prose, plans, READMEs that happen to embed
@@ -134,8 +138,11 @@ vs. code-class:
   `qstudying-public`, `qexplaining-public`, `qdonating-public`.
 - **Apache-2.0** (code-class — Lean axiom sets, predicate stubs,
   drivers, framework code redacted for public consumption):
-  `qagents-public`, `qnarre-public`, `qresev-public`.
+  `qnarre-public`, `qresev-public`.
+- **Both**: `qagents-public` is dual-licensed — Apache-2.0 for the code
+  lane, MIT for the prose and AI-agentic-workflow lane. It ships `LICENSE`
+  (Apache-2.0) alongside `LICENSE-MIT`.
 
-Content-class repos ship a top-level `LICENSE`; code-class repos ship
-a top-level `LICENSE.txt`. The filename split is load-bearing inside
+Content-class repos ship a top-level `LICENSE`; the two code-class repos
+ship a top-level `LICENSE.txt`. The filename split is load-bearing inside
 the staging tree; the live repos preserve it on push.
