@@ -15,10 +15,16 @@ read "both ship as early-beta on or about 2026-06-01"; that date was the
 opening of the six-month drive window, not a ship date, and stating it as
 one was wrong. The early-beta opening — a hosted verifier and evaluator
 you can point at your own input — is a **Month 3+ deliverable of that
-window**. What is reachable today is engineering surface, not the launch:
-`qresev.quantapix.com` answers publicly and streams a kernel verdict for a
-committed worked example; `qnarre.quantapix.com` and its streaming
-proof-graph UI remain the launch deliverable. Per-repo detail is in the
+window**. What is reachable today is engineering surface, not the launch, and
+it is worth being exact about that surface, because the previous version of
+this paragraph was not. Both `qnarre.quantapix.com` and `qresev.quantapix.com`
+serve their product interface publicly, each with a committed worked example
+you can page through. **In both cases that example is rendered in your browser
+from a fixed, committed trace — no kernel runs, and nothing you supply is
+evaluated.** The kernel-backed path those screens depict is real and lives in
+the working repository; it is not wired to either public site, and wiring it is
+the early-beta deliverable rather than something you can exercise today.
+Per-repo detail is in the
 per-repo `STATUS.md` files, refreshed weekly; the drive repo carries its
 monthly ledgers and weekly digests instead.
 
