@@ -10,23 +10,37 @@ portfolios. Same kernel, different statutes, different OHLCV. Each will
 ship with a live trace: every `True` or `False` the system returns is
 anchored to a quoted source.
 
-**Neither is open to the public yet** (2026-08-21). This line used to
-read "both ship as early-beta on or about 2026-06-01"; that date was the
-opening of the six-month drive window, not a ship date, and stating it as
-one was wrong. The early-beta opening — a hosted verifier and evaluator
-you can point at your own input — is a **Month 3+ deliverable of that
-window**. What is reachable today is engineering surface, not the launch, and
-it is worth being exact about that surface, because the previous version of
-this paragraph was not. Both `qnarre.quantapix.com` and `qresev.quantapix.com`
-serve their product interface publicly, each with a committed worked example
-you can page through. **In both cases that example is rendered in your browser
-from a fixed, committed trace — no kernel runs, and nothing you supply is
-evaluated.** The kernel-backed path those screens depict is real and lives in
-the working repository; it is not wired to either public site, and wiring it is
-the early-beta deliverable rather than something you can exercise today.
-Per-repo detail is in the
-per-repo `STATUS.md` files, refreshed weekly; the drive repo carries its
-monthly ledgers and weekly digests instead.
+**Neither is open to the public yet** (measured 2026-09-15). This line used
+to read "both ship as early-beta on or about 2026-06-01"; that date was the
+opening of the six-month drive window, not a ship date, and stating it as one
+was wrong. Its replacement — "a Month 3+ deliverable of that window" — has now
+come due on its own terms: Month 3 of a window that opened 2026-06-01 is this
+month, and the early-beta opening (a hosted verifier and evaluator you can
+point at **your own** input) is not here. That is a missed estimate, said
+plainly rather than quietly re-set. This page will not publish another date
+for it; the next thing it says about the opening will be that it happened.
+
+What **is** reachable today, stated from the served surfaces rather than from
+the working repository — the distinction matters, because the two previous
+versions of this paragraph were each wrong in that exact way, once in each
+direction:
+
+- Both `qnarre.quantapix.com` and `qresev.quantapix.com` serve their product
+  interface publicly, each with a committed worked example you can page
+  through.
+- Those interfaces are not symmetric, and an earlier version of this page
+  claimed they were. Qnarre's reads its trace from a **live replay API**;
+  Qresev's reads a trace bundled into the page.
+- In both cases what you are reading is a **stored trace of a kernel run that
+  already happened**. No kernel runs on demand, and nothing you supply is
+  evaluated. The replay API answers for a short allow-list of committed
+  synthetic examples and refuses every other id.
+- The kernel-backed path those screens depict is real and lives in the working
+  repository. Pointing it at your own input is the early-beta deliverable, not
+  something you can exercise today.
+
+Per-repo detail is in the per-repo `STATUS.md` files; the drive repo carries
+its monthly ledgers and weekly digests instead.
 
 - **<https://quantapix.com>** — engineering output (code, schemas, traces, framework specs).
 - **<https://femfas.net>** — motivational record. The system that was
@@ -76,8 +90,10 @@ workflows that:
 
 Until Qnarre and Qresev open to early beta, the
 public surface of this organisation is the first two of the three:
-**learning** and **attention**. Both are weekly-refreshed curated
-windows into the private working repository's activities.
+**learning** and **attention**. Both are curated windows into the private
+working repository's activities, refreshed when a release run lands rather
+than on a fixed weekly schedule — gaps of two to four weeks have happened.
+Each repo's own commit history is the authority on when it last moved.
 
 The 2026-06-01 → 2026-12-01 window is also the window of a **public
 donation drive** backing the framework. The drive funds four exclusive-use
@@ -108,9 +124,11 @@ start at
 then open an issue on that repo to claim a unit before encoding it. It
 links a curated starter set of nine numbered tasks with acceptance commands and
 the commands that re-derive their counts. Four have since been swept internally
-and are marked closed in place; the five still open were re-derived against the
-working tree on 2026-08-14, when all five reproduced their per-directory counts
-unchanged. They are not yet filed as individual issues, and
+and are marked closed in place; the five still open last reproduced their
+per-directory counts unchanged when re-derived against the working tree. The
+linked file carries the date of that derivation — read it there rather than
+here, because a date repeated in two places is a date that goes stale in one
+of them, which is how this sentence was wrong before. They are not yet filed as individual issues, and
 Discussions are not enabled; the file says so plainly rather than leaving you to
 discover it.
 
@@ -118,14 +136,20 @@ discover it.
 
 | Repo                                                                    | Role                                                                                                                                                                                                                    | Cadence                          |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| [`qagents-public`](https://github.com/quantapix/qagents-public)         | Umbrella — the redacted `CLAUDE.md` graph that governs AI-assisted authorship across the framework. The "how the practice runs" companion.                                                                              | weekly-refreshed from 2026-06-01 |
-| [`qdonating-public`](https://github.com/quantapix/qdonating-public)     | Redacted slice of the public donation drive: pitch, deliverable promises, monthly ledgers, weekly digests. Six-month window 2026-06-01 → 2026-12-01.                                                                    | weekly-refreshed from 2026-06-01 |
-| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), AI-narrated, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window.                                    | weekly-refreshed                 |
-| [`qnarre-public`](https://github.com/quantapix/qnarre-public)           | Redacted legal-domain slice backing the **Qnarre** product: Lean4 axiom set for civil RICO + §§ 1981/1983/1985(3) + Title VI, with predicate stubs, a thin driver, and the full-U.S.-Code axiomatization program.       | weekly-refreshed from 2026-06-01 |
-| [`qresev-public`](https://github.com/quantapix/qresev-public)           | Redacted financial-domain umbrella backing the **Qresev** product: the Lean4 evaluator (TREND / MOMENTUM / OPTIONS-RISK / SECTOR / DRAWDOWN) plus the market-inspection and portfolio-management surfaces that feed it. | weekly-refreshed from 2026-06-01 |
-| [`qstudying-public`](https://github.com/quantapix/qstudying-public)     | Lean4 expert-track focus areas + OSS contribution targets that back the proving and accounting kernels. The "where to read, what to write down" companion.                                                              | weekly-refreshed                 |
+| [`qagents-public`](https://github.com/quantapix/qagents-public)         | Umbrella — the redacted `CLAUDE.md` graph that governs AI-assisted authorship across the framework. The "how the practice runs" companion.                                                                              | public since 2026-06-01; refreshed per release run |
+| [`qdonating-public`](https://github.com/quantapix/qdonating-public)     | Redacted slice of the public donation drive: pitch, deliverable promises, monthly ledgers, weekly digests. Six-month window 2026-06-01 → 2026-12-01.                                                                    | public since 2026-06-01; refreshed per release run |
+| [`qexplaining-public`](https://github.com/quantapix/qexplaining-public) | 50-video explainer arc (5 topics × 10 subjects), AI-narrated, brand-synced with the two product sites. The "convey how it works" companion, scoped to the pre-beta window.                                    | refreshed per release run        |
+| [`qnarre-public`](https://github.com/quantapix/qnarre-public)           | Redacted legal-domain slice backing the **Qnarre** product: Lean4 axiom set for civil RICO + §§ 1981/1983/1985(3) + Title VI, with predicate stubs, a thin driver, and the full-U.S.-Code axiomatization program.       | public since 2026-06-01; refreshed per release run |
+| [`qresev-public`](https://github.com/quantapix/qresev-public)           | Redacted financial-domain umbrella backing the **Qresev** product: the Lean4 evaluator (TREND / MOMENTUM / OPTIONS-RISK / SECTOR / DRAWDOWN) plus the market-inspection and portfolio-management surfaces that feed it. | public since 2026-06-01; refreshed per release run |
+| [`qstudying-public`](https://github.com/quantapix/qstudying-public)     | Lean4 expert-track focus areas + OSS contribution targets that back the proving and accounting kernels. The "where to read, what to write down" companion.                                                              | refreshed per release run        |
 
 The two products' own repositories will join this list when they ship.
+
+The Cadence column says *per release run* because that is what it is. This
+page used to say "weekly-refreshed" on every row; measured 2026-09-15, six of
+the seven had last moved 17 days earlier and one 31 days earlier, so the claim
+was falsifiable from the repo list alone. A release run is what refreshes
+them, and the runs are not weekly.
 
 ## Contact
 
